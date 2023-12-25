@@ -666,6 +666,7 @@ input[type="email"]::placeholder {
   .modal-btn:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
   }
 
   .modal-btn-icon {
@@ -810,9 +811,26 @@ input[type="email"]::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    
-}
+    }
 
 .privacy-link {
     color: #4d5ae5;
+}
+
+.checkbox:checked + .privacy-checkbox {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.checkbox:checked + .privacy-checkbox > .privacy-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.privacy-icon {
+    opacity: 0;
+    transform: scale(0.3);
+    transition: opacity 300ms cubic-bezier(0.8, 0, 0, 1.8) 150ms,
+      transform 300ms cubic-bezier(0.8, 0, 0, 1.8) 150ms;
 }
