@@ -815,13 +815,11 @@ input[type="email"]::placeholder {
     color: #4d5ae5;
 }
 
-.checkbox:checked + .privacy-checkbox {
+#user-privacy:checked + .modal-checkbox > .privacy-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
-
-
 
 .privacy-icon {
     opacity: 0;
