@@ -760,6 +760,7 @@ input[type="email"]::placeholder {
 
  .modal-agreement {
     margin-bottom: 24px;
+    user-select: none;
  }
 
 .modal-send-btn {
@@ -807,6 +808,7 @@ input[type="email"]::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    cursor: pointer;
     }
 
 .privacy-link {
@@ -819,10 +821,7 @@ input[type="email"]::placeholder {
     fill: #F4F4FD;
 }
 
-.checkbox:checked + .privacy-checkbox > .privacy-icon {
-    opacity: 1;
-    transform: scale(1);
-}
+
 
 .privacy-icon {
     opacity: 0;
